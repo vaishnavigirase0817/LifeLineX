@@ -1,6 +1,4 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+
 
 # 🏥 LifeLineX  
 ### AI-Powered Public Health & Emergency Ecosystem  
@@ -49,4 +47,18 @@ LifeLineX is a modern healthcare platform that provides **AI-driven health insig
 
 ---
 
-## 📁 Project Structure
+## 🎯 Use Cases
+
+- Emergency medical response  
+- Early disease detection  
+- Rural healthcare accessibility  
+- Family health monitoring  
+
+---
+
+## 🧠 Future Enhancements
+
+- Wearable device integration  
+- Advanced AI health models  
+- Offline-first mobile application  
+- Multi-language support  
