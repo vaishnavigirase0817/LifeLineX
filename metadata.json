@@ -1,0 +1,6 @@
+{
+  "name": "LifeLineX",
+  "description": "AI-Powered Public Health & Emergency Ecosystem for modern healthcare and rural accessibility.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["AI Health Analysis", "Emergency SOS", "Smart Health Maps", "Doctor Consultation"]
+}

@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "Public and private user health data",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "healthScore": { "type": "number" },
+        "avatar": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "email"]
+    },
+    "emergencyAlerts": {
+      "title": "Emergency Alert",
+      "description": "SOS triggers with location and status",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "location": { "type": "object" },
+        "status": { "type": "string", "enum": ["active", "resolved", "false-alarm"] },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "status", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "users",
+      "description": "User profile data"
+    },
+    "/alerts/{alertId}": {
+      "schema": "emergencyAlerts",
+      "description": "Emergency SOS alerts"
+    }
+  }
+}
